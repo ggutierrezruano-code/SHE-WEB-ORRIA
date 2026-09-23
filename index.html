@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="eu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaizka - ASIR Portafolioa</title>
+    <style>
+        /* Estilo Neo-Brutalismo: Bordes duros, colores sólidos, sombras marcadas */
+        :root {
+            --bg-color: #fdf5e6;
+            /* Color crema/hueso */
+            --main-dark: #111111;
+            --accent-yellow: #fde047;
+            --accent-green: #86efac;
+            --accent-red: #fca5a5;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--main-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR NEO-BRUTALISTA */
+        .navbar {
+            background-color: var(--accent-yellow);
+            border-bottom: 4px solid var(--main-dark);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+        }
+
+        .nav-links a {
+            color: var(--main-dark);
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid transparent;
+            padding: 0.2rem 0.5rem;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--main-dark);
+            color: var(--bg-color);
+        }
+
+        /* CONTENIDO */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+            padding-top: 2rem;
+            /* Para que el navbar no lo tape al hacer scroll */
+            scroll-margin-top: 80px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-bottom: 4px solid var(--main-dark);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        /* PRESENTACIÓN (HERO) */
+        .hero-box {
+            background-color: var(--accent-green);
+            border: 4px solid var(--main-dark);
+            box-shadow: 8px 8px 0px var(--main-dark);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+        }
+
+        .hero-box h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .hero-box p {
+            font-size: 1.1rem;
+            font-family: Arial, sans-serif;
+            /* Combinamos fuente de texto con títulos monoespaciados */
+            font-weight: 500;
+        }
+
+        /* TARJETAS DE DICCIONARIO */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .term-card {
+            background-color: white;
+            border: 4px solid var(--main-dark);
+            box-shadow: 8px 8px 0px var(--main-dark);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        .term-card:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0px var(--main-dark);
+        }
+
+        .term-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px dashed var(--main-dark);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .term-card h3 {
+            margin: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            background-color: var(--accent-red);
+            padding: 0.2rem 0.8rem;
+            border: 2px solid var(--main-dark);
+            border-radius: 4px;
+        }
+
+        .term-number {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        .term-body p {
+            font-family: Arial, sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        /* CAJA DE EJEMPLO */
+        .example-box {
+            background-color: #f1f5f9;
+            border: 2px solid var(--main-dark);
+            padding: 1rem;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        .example-box strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            background-color: var(--main-dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1>SHE WEB ORRIA - GAIZKA</h1>
+        <ul class="nav-links">
+            <li><a href="#aurkezpena">Aurkezpena</a></li>
+            <li><a href="#hiztegia">Mehatxuak</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- SARRERA / AURKEZPENA -->
+        <section id="aurkezpena">
+            <h2 class="section-title">00. Sarrera</h2>
+            <div class="hero-box">
+                <h2>Segurtasuna eta Erabilgarritasun Handia</h2>
+                <p>Hemen zure segurtasun eta erabilgarritasunaren inguruan azalpenak eta adibideak aurkituko dituzu.</p>
+            </div>
+        </section>
+
+        <!-- HIZTEGIA CON EJEMPLOS -->
+        <section id="hiztegia">
+            <h2 class="section-title">01. Malware Hiztegia</h2>
+
+            <div class="grid-container">
+
+                <!-- TERMINO 1 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Phishing</h3>
+                        <span class="term-number">#01</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Iruzur egiteko teknika bat da, normalean posta elektronikoz. Erasotzaileak enpresa ezagun
+                            baten itxura hartzen dau, guk geuk gure pasahitzak edo datu pertsonalak emateko engainatuz.
+                        </p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Netflix-en kontua blokeatu dela esaten duen mezu faltsu bat jasotzen duzu. Estekan sartzen zara eta zure erabiltzailea eta pasahitza ematen dituzu, eta hacker-ak lapurtzen ditu.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ⚠️ <br>
+                            Osotasuna ⚠️ <br>
+                            Ez-gaitetzea ⚠️ <br>
+                            Konfidentzialtasuna ❌ <br>
+                            Autentifikazioa ❌ <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 2 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Biren erasoa (Birusa)</h3>
+                        <span class="term-number">#02</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Gure ordenagailuan sartzen dan programa txarra. Giza-birusen modura, bere helburua bikoiztea
+                            eta beste fitxategi edo programa batzuk infektatzea da, sistema kaltetu arte.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Internetetik Word fitxategi bat jaisten dozu eta, irekitzean, kode gaizto batek zure ordenagailuko argazkiak ezabatzen ditu.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ❌ <br>
+                            Osotasuna ✅ <br>
+                            Ez-gaitetzea ✅ <br>
+                            Konfidentzialtasuna ✅ <br>
+                            Autentifikazioa ⚠️ <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 3 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Troiarra</h3>
+                        <span class="term-number">#03</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Itxura oneko programa baten barruan ezkutatzen dan software gaiztoa da. Zuk zeuk instalatzen
+                            dozu (onuragarria dala ustez), baina atzealdean ekintza kaltegarriak egiten dauz.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            "Spotify Premium dohainik" programa instalatzen dozu. Funtzionatzen dau, baina ezkutuan zure ordenagailua hacker baten Botnet batera konektatzen da.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ⚠️ <br>
+                            Osotasuna ❌ <br>
+                            Ez-gaitetzea ⚠️ <br>
+                            Konfidentzialtasuna ❌ <br>
+                            Autentifikazioa ❌ <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 4 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Backdoorsak</h3>
+                        <span class="term-number">#04</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Sistema batean ixten dan "ezkutuko sarrera" da. Erasotzaileari (edo batzuetan garatzaileari)
+                            aukera emoten deutso ohiko segurtasun-neurriak (pasahitzak, firewall) saihesteko eta barrura
+                            nahi dauen bakoitzean sartzeko.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Hacker batek zure zerbitzarian backdoor bat instalatzen dau. Pasahitza aldatu arren, ezkutuko sarreratik berriro sartu daiteke.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ⚠️ <br>
+                            Osotasuna ❌ <br>
+                            Ez-gaitetzea ❌ <br>
+                            Konfidentzialtasuna ❌ <br>
+                            Autentifikazioa ❌ <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 5 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Spywarea</h3>
+                        <span class="term-number">#05</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Gure ekipoan ezkutatu eta gure jarduera isilpean espioatzen dauen programa da. Datuak batu
+                            eta erasotzaileari bidaltzen deutsaz.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Keylogger bat ordenagailuan ezkutatzen da eta teklatuan idazten dozun guztia hackerrari bidaltzen dio.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ✅ <br>
+                            Osotasuna ✅<br>
+                            Ez-gaitetzea ✅ <br>
+                            Konfidentzialtasuna ❌ <br>
+                            Autentifikazioa ⚠️ <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 6 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Stealerrak</h3>
+                        <span class="term-number">#06</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Spyware mota bat da, baina oso zehatza: bere helburu bakarra informazio kritikoa <em>zuzenean
+                                lapurtzea</em> da, askotan dirua lortzeko asmoz.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Redline Stealer batek zure Chrome-ko gordetako pasahitzak, cookiak eta kriptomoneta zorroa kopiatu eta lapurtzen ditu.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ✅ <br>
+                            Osotasuna ✅ <br>
+                            Ez-gaitetzea ⚠️ <br>
+                            Konfidentzialtasuna ❌ <br>
+                            Autentifikazioa ❌ <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Gaizka - 2AS3D - Segurtasuna eta Erabilgarritasun Handia (2026)</p>
+    </footer>
+
+</body>
+
+</html>
