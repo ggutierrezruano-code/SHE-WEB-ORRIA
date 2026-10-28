@@ -187,6 +187,11 @@
             font-family: 'Courier New', Courier, monospace;
         }
 
+        .example-box a {
+            color: var(--main-dark);
+            font-weight: bold;
+        }
+
         footer {
             background-color: var(--main-dark);
             color: white;
@@ -207,6 +212,9 @@
             <li><a href="#aurkezpena">Aurkezpena</a></li>
             <li><a href="#hiztegia">Mehatxuak</a></li>
             <li><a href="#erasoak">Erasoak</a></li>
+            <li><a href="#adibideak">Eraso handien adibideak</a></li>
+            <li><a href="#bibliografia">Bibliografia</a></li>
+            <li><a href="#hausnarketa">Hausnarketa</a></li>
         </ul>
     </nav>
 
@@ -243,11 +251,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ⚠️ <br>
-                            Osotasuna ⚠️ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ⚠️ – Kontua blokeatu dezakete <br>
+                            Osotasuna ⚠️ – Datuak alda ditzakete <br>
+                            Ez-gaitetzea ⚠️ – Ekintzak biktimaren izenean egiten dira <br>
+                            Konfidentzialtasuna ❌ – Pasahitzak lapurtzen dira <br>
+                            Autentifikazioa ❌ – Zure identitatea erabiltzen dute <br>
                         </div>
                     </div>
                 </div>
@@ -267,11 +275,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ❌ <br>
-                            Osotasuna ✅ <br>
-                            Ez-gaitetzea ✅ <br>
-                            Konfidentzialtasuna ✅ <br>
-                            Autentifikazioa ⚠️ <br>
+                            Eskuragarritasuna ❌ – Fitxategiak ezabatzen dira <br>
+                            Osotasuna ✅ – Ezabatu egiten ditu, ez aldatu <br>
+                            Ez-gaitetzea ✅ – Ez da erregistroetan eragiten <br>
+                            Konfidentzialtasuna ✅ – Datuak ez dira kanporatzen <br>
+                            Autentifikazioa ⚠️ – Zure saioarekin exekutatzen da <br>
                         </div>
                     </div>
                 </div>
@@ -291,11 +299,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ⚠️ <br>
-                            Osotasuna ❌ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ⚠️ – Baliabideak kontsumitzen ditu <br>
+                            Osotasuna ❌ – Sistema eta programak aldatzen ditu <br>
+                            Ez-gaitetzea ⚠️ – Ekintzak ezkutatzen ditu <br>
+                            Konfidentzialtasuna ❌ – Datuak kanpora bidaltzen ditu <br>
+                            Autentifikazioa ❌ – Programa fidagarria dela ematen du <br>
                         </div>
                     </div>
                 </div>
@@ -316,11 +324,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ⚠️ <br>
-                            Osotasuna ❌ <br>
-                            Ez-gaitetzea ❌ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ⚠️ – Sistemak martxan jarraitzen du <br>
+                            Osotasuna ❌ – Erasotzaileak sistema alda dezake <br>
+                            Ez-gaitetzea ❌ – Sarrerak ez dira erregistratzen <br>
+                            Konfidentzialtasuna ❌ – Datu guztietara sar daiteke <br>
+                            Autentifikazioa ❌ – Autentifikazioa saihesten du <br>
                         </div>
                     </div>
                 </div>
@@ -340,11 +348,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ✅ <br>
-                            Osotasuna ✅<br>
-                            Ez-gaitetzea ✅ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ⚠️ <br>
+                            Eskuragarritasuna ✅ – Sistemak ondo dabil <br>
+                            Osotasuna ✅ – Ez ditu datuak aldatzen <br>
+                            Ez-gaitetzea ✅ – Ez ditu erregistroak ukitzen <br>
+                            Konfidentzialtasuna ❌ – Jarduera espioitzen du <br>
+                            Autentifikazioa ⚠️ – Pasahitzak lapurtu ditzake <br>
                         </div>
                     </div>
                 </div>
@@ -364,11 +372,36 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ✅ <br>
-                            Osotasuna ✅ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ✅ – Sistemak ondo dabil <br>
+                            Osotasuna ✅ – Datuak kopiatzen ditu, ez aldatu <br>
+                            Ez-gaitetzea ⚠️ – Lapurretaren arrastoa zaila da <br>
+                            Konfidentzialtasuna ❌ – Pasahitzak eta zorroa lapurtzen ditu <br>
+                            Autentifikazioa ❌ – Lapurtutako kredentzialak erabiltzen dira <br>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TERMINO 7 -->
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Harrak</h3>
+                        <span class="term-number">#07</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Beren kabuz kopiatu eta sarean zehar zabaltzen dan malwarea da. Birusak ez bezala, ez dau
+                            fitxategi bat behar kutsatzeko, ezta erabiltzailearen laguntzarik ere: sareko ahuleziak
+                            erabiltzen ditu ekipo batetik bestera salto egiteko.</p>
+                        <div class="example-box">
+                            <strong>Adibidea:</strong>
+                            Har bat enpresako ordenagailu bakar batera sartzen da. Handik, sare berean dauden gainerako ekipo ahulak bilatu eta kutsatzen ditu, eta azkenean sarea gainkargatuta geratzen da.
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ❌ – Sarea gainkargatzen du <br>
+                            Osotasuna ⚠️ – Fitxategiak alda ditzake <br>
+                            Ez-gaitetzea ⚠️ – Lehen ekipoa zaila da aurkitzen <br>
+                            Konfidentzialtasuna ⚠️ – Beste malware bat ekar dezake <br>
+                            Autentifikazioa ⚠️ – Sareko ahuleziak aprobetxatzen ditu <br>
                         </div>
                     </div>
                 </div>
@@ -378,7 +411,7 @@
 
         <!-- ERASOAK ETA BOTNETAK -->
         <section id="erasoak">
-            <h2 class="section-title">02. Erasoak</h2>
+            <h2 class="section-title">02. Erasoak eta Botnetak</h2>
 
             <div class="grid-container">
 
@@ -398,11 +431,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ⚠️ <br>
-                            Osotasuna ❌ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ⚠️ – Kontuak kutsatu daitezke <br>
+                            Osotasuna ❌ – Ekipoan malwarea instalatzen da <br>
+                            Ez-gaitetzea ⚠️ – Mezuak lagunen izenean doaz <br>
+                            Konfidentzialtasuna ❌ – Datuak lapurtu ditzake <br>
+                            Autentifikazioa ❌ – Zure kontua erabiltzen du <br>
                         </div>
                     </div>
                 </div>
@@ -423,11 +456,11 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ❌ <br>
-                            Osotasuna ❌ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ⚠️ <br>
-                            Autentifikazioa ⚠️ <br>
+                            Eskuragarritasuna ❌ – DDoS-ak zerbitzua erortzen du <br>
+                            Osotasuna ❌ – Gailuak kanpotik kontrolatzen dira <br>
+                            Ez-gaitetzea ⚠️ – Erasotzailea zaila da aurkitzen <br>
+                            Konfidentzialtasuna ⚠️ – Datuak lapurtu ditzake <br>
+                            Autentifikazioa ⚠️ – Gailu kutsatuak erabiltzen dira <br>
                         </div>
                     </div>
                 </div>
@@ -448,15 +481,172 @@
                         </div>
                         <div class="example-box">
                             <strong>Segurtasunen printzipioak:</strong>
-                            Eskuragarritasuna ⚠️ <br>
-                            Osotasuna ⚠️ <br>
-                            Ez-gaitetzea ⚠️ <br>
-                            Konfidentzialtasuna ❌ <br>
-                            Autentifikazioa ❌ <br>
+                            Eskuragarritasuna ⚠️ – Kontua blokeatu daiteke <br>
+                            Osotasuna ⚠️ – Barruan sartuta datuak alda ditzake <br>
+                            Ez-gaitetzea ⚠️ – Saiakera ugari, egilea ezezaguna <br>
+                            Konfidentzialtasuna ❌ – Pasahitza asmatzen du <br>
+                            Autentifikazioa ❌ – Beste norbaiten identitatea erabiltzen du <br>
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- ERASO HANDIEN ADIBIDEAK -->
+        <section id="adibideak">
+            <h2 class="section-title">03. Eraso handien adibideak</h2>
+
+            <div class="hero-box">
+                <h2>Colonial Pipeline (2021): zer gertatu zen?</h2>
+                <p>2021eko maiatzaren 7an, DarkSide taldeak ransomware eraso bat egin zion Colonial Pipeline
+                    enpresari, AEBetako gasolio-hodirik handienaren jabeari. Enpresak hodia gelditu behar izan zuen,
+                    eta Ekialdeko kostaldeko erregaiaren %45 inguru ez zen banatu. Gasolindegietan erregai-faltak
+                    egon ziren, jendeak izu-erosketak egin zituen eta larrialdi-egoera deklaratu zen hainbat estatutan.</p>
+            </div>
+
+            <div class="grid-container">
+
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Ezaugarriak</h3>
+                        <span class="term-number">#01</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="example-box">
+                            <strong>Ezaugarri teknikoak:</strong>
+                            • Mota: ransomware (datuak lapurtu eta zifratu) <br>
+                            • Erasotzailea: DarkSide (Ransomware-as-a-Service modeloa) <br>
+                            • Sarrera: VPN kontu zaharkitu baten pasahitz filtratua <br>
+                            • Babes falta: autentifikazio-faktore anitzik (MFA) gabe <br>
+                            • Eragina: sistemak zifratu eta hodia gelditu <br>
+                            • Erreskatea: 75 Bitcoin (4,4 milioi dolar inguru), ordaindu zen <br>
+                            • Ondoren: FBI-k erreskatearen zati handi bat berreskuratu zuen <br>
+                        </div>
+                        <div class="example-box">
+                            <strong>Nola funtzionatu zuen:</strong>
+                            Erasotzaileak filtratutako pasahitz batekin VPN-ra sartu zen, MFA gabe. Barruan datuak lapurtu eta enpresaren sistemak zifratu zituen. Enpresak, kutsadura hodiaren kontrolera hel ez zedin, operazioak gelditu zituen.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Eragina eta ikasgaiak</h3>
+                        <span class="term-number">#02</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Eraso txiki batek azpiegitura kritiko bat gelditu zezakeela erakutsi zuen. Egun batzuk
+                            geroago, DarkSide taldeak bere jarduera utzi zuela iragarri zuen.</p>
+                        <div class="example-box">
+                            <strong>Ikasgaiak:</strong>
+                            • MFA gaitu urruneko sarbide guztietan <br>
+                            • Erabiltzen ez diren kontuak ezabatu <br>
+                            • Pasahitz sendo eta bakarrak erabili <br>
+                            • Babeskopiak egin eta sare operatiboa bereizi <br>
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ❌ – Hodia gelditu zen <br>
+                            Osotasuna ⚠️ – Sistemak zifratu ziren <br>
+                            Ez-gaitetzea ⚠️ – Erasotzaileak ezkutuan ibili ziren <br>
+                            Konfidentzialtasuna ❌ – Datuak lapurtu ziren <br>
+                            Autentifikazioa ❌ – Pasahitz filtratua erabili zen <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- STUXNET -->
+            <div class="hero-box" style="margin-top: 4rem;">
+                <h2>Stuxnet (2010): zer gertatu zen?</h2>
+                <p>Stuxnet Iranen aurkako harra izan zen, Natanz zentral nuklearreko uranio-aberasteko zentrifugagailuak
+                    suntsitzeko sortua. Gutxi gorabehera 1.000 makina suntsitu zituen, eta 2010ean aurkitu zuten.
+                    Ordenagailuetan kalte egin ordez, eraso fisikoa egin zuen: lehen "ziberarma" ezagunetako bat da.</p>
+            </div>
+
+            <div class="grid-container">
+
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Ezaugarriak</h3>
+                        <span class="term-number">#03</span>
+                    </div>
+                    <div class="term-body">
+                        <div class="example-box">
+                            <strong>Ezaugarri teknikoak:</strong>
+                            • Mota: har (worm) industria-sistemen aurkakoa <br>
+                            • Helburua: Siemens-en PLC-ak (Step7) eta Natanz-eko zentrifugagailuak <br>
+                            • Zabalkundea: USB gailuen bidez (sare isolatuetara iristeko) <br>
+                            • Zero-day: lau ahulezia ezezagun baino gehiago erabili zituen <br>
+                            • Ezkutatzea: ziurtagiri digital lapurtuekin sinatuta zegoen <br>
+                            • Eragina: zentrifugagailuak abiadura okerrean jarri eta operadoreei datu normalak erakutsi <br>
+                            • Egileak: ofizialki ez da onartu, baina AEBei eta Israeli egotzi zaie <br>
+                        </div>
+                        <div class="example-box">
+                            <strong>Nola funtzionatu zuen:</strong>
+                            USB baten bidez sare isolatura sartu zen. Han, PLC-ak bilatu eta programa aldatu zuen, zentrifugagailuak azkartu eta moteldu egiten zituen, gailuak apurtu arte. Bitartean, kontrol-pantailek ezer ez zegoela adierazten zuten.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="term-card">
+                    <div class="term-card-header">
+                        <h3>Eragina eta ikasgaiak</h3>
+                        <span class="term-number">#04</span>
+                    </div>
+                    <div class="term-body">
+                        <p>Stuxnet-ek erakutsi zuen sare isolatu batek ere ez duela segurtasun osoa bermatzen, eta
+                            software bidez kalte fisikoa eragin daitekeela. Industria-azpiegituren segurtasuna
+                            garrantzitsu bihurtu zen ordutik.</p>
+                        <div class="example-box">
+                            <strong>Ikasgaiak:</strong>
+                            • USB eta kanpoko gailuak kontrolatu <br>
+                            • Industria-sareak (SCADA/PLC) bereizi eta babestu <br>
+                            • Sistemak eta PLC-ak eguneratuta mantendu <br>
+                            • Prozesuaren monitorizazio independentea izan <br>
+                        </div>
+                        <div class="example-box">
+                            <strong>Segurtasunen printzipioak:</strong>
+                            Eskuragarritasuna ❌ – Zentrifugagailuak suntsitu ziren <br>
+                            Osotasuna ❌ – PLC programa aldatu zen <br>
+                            Ez-gaitetzea ⚠️ – Datu faltsuak erakutsi zituen <br>
+                            Konfidentzialtasuna ⚠️ – Sistemari buruzko informazioa jaso zuen <br>
+                            Autentifikazioa ⚠️ – Ziurtagiri lapurtuak erabili ziren <br>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BIBLIOGRAFIA -->
+        <section id="bibliografia">
+            <h2 class="section-title">04. Bibliografia</h2>
+            <div class="term-card">
+                <div class="term-body">
+                    <div class="example-box">
+                        <strong>Iturriak:</strong>
+                        • Wikipedia: <a href="https://en.wikipedia.org/wiki/Stuxnet" target="_blank">Stuxnet</a>,
+                        <a href="https://en.wikipedia.org/wiki/Colonial_Pipeline_ransomware_attack" target="_blank">Colonial Pipeline ransomware attack</a>,
+                        <a href="https://en.wikipedia.org/wiki/Botnet" target="_blank">Botnet</a> eta
+                        <a href="https://en.wikipedia.org/wiki/Koobface" target="_blank">Koobface</a> <br>
+                        • INCIBE: <a href="https://www.incibe.es" target="_blank">www.incibe.es</a> <br>
+                        • CISA: <a href="https://www.cisa.gov" target="_blank">www.cisa.gov</a> <br>
+                        • Kaspersky Resource Center: <a href="https://www.kaspersky.com/resource-center" target="_blank">www.kaspersky.com/resource-center</a> <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HAUSNARKETA PROPIOA -->
+        <section id="hausnarketa">
+            <h2 class="section-title">05. Hausnarketa propioa</h2>
+            <div class="hero-box">
+                <p>Lan honekin konturatu naiz malware malware mota asko daudela: askotan gizakiaren
+                    akatsa aprobetxatzen dute, pasahitz ahul bat, esteka batean klik bat edo eguneratu gabeko sistema bat.
+                    Stuxnet edo Colonial Pipeline bezalako kasuek erakusten dute eraso batek kalte fisikoa eta ondorio
+                    sozialak izan ditzakeela. Beraz, eguneraketak, pasahitz sendoak ezinbestekoak dira.</p>
             </div>
         </section>
 
